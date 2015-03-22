@@ -6,7 +6,10 @@ $config = [
 	'modules' => [
 		'api' => [
 			'class' => 'app\modules\api\ApiModule',
-		]
+		],
+        'admin' => [
+            'class' => 'app\modules\admin\AdminModule',
+        ]
 	],
     'id' => 'basic',
     'basePath' => dirname(__DIR__),
