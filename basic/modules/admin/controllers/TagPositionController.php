@@ -4,7 +4,7 @@ namespace app\modules\admin\controllers;
 
 use Yii;
 use app\models\TagPosition;
-use app\models\Search\TagPosition as TagPositionSearch;
+use app\models\search\TagPosition as TagPositionSearch;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;

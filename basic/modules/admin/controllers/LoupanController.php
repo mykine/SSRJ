@@ -4,7 +4,7 @@ namespace app\modules\admin\controllers;
 
 use Yii;
 use app\models\Loupan;
-use app\models\Search\Loupan as LoupanSearch;
+use app\models\search\Loupan as LoupanSearch;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;

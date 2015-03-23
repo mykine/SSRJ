@@ -4,7 +4,7 @@ namespace app\modules\admin\controllers;
 
 use Yii;
 use app\models\HouseType;
-use app\models\Search\HouseType as HouseTypeSearch;
+use app\models\search\HouseType as HouseTypeSearch;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
