@@ -9,7 +9,7 @@ class AdminModule extends \yii\base\Module
     public function init()
     {
         parent::init();
-	$this->layout='admin';
+	$this->layout='admin2';
         // custom initialization code goes here
     }
 }

@@ -19,9 +19,12 @@ AppAsset::register($this);
     <meta name="csrf-token" content="ZW9WTmlZdjkNBWA7WW0.dj8lE3oHESIIVQskKhEJDnwhWhopHm4CSw==">
     <title>后台管理</title>
     <link href="/assets/5681ccfb/css/bootstrap.css" rel="stylesheet">
-    <link href="/css/site.css" rel="stylesheet"></head>
+    <link href="/css/site.css" rel="stylesheet">
+</head>
 <body>
-    <div class="wrap">
+	<!-- wrap开始 -->
+    <div class="wrap" style='background-color:lime;'>
+		<!-- nav开始 -->
         <nav id="w1" class="navbar-inverse navbar-fixed-top navbar" role="navigation">
             <div class="container">
                 <div class="navbar-header">
@@ -51,14 +54,28 @@ AppAsset::register($this);
                 </div>
             </div>
         </nav>
-        <div class="container">
-	 		 <?= Breadcrumbs::widget([
-                  'links' => isset($this->params['breadcrumbs']) ? $this->params['breadcrumbs'] : [],
-              ]) ?>
-			<?= $content ?>
-        </div>
-    </div>
+		<!--nav结束-->
+		
+		<div>
+			<div style="float:left;height:500px;;width:10%;background-color:red;">
+				
+			</div>
+			<div style="float:right;">
+				<!--content开始-->
+        		<div class="container" style='background-color:black;'>
+	 		 		<?= Breadcrumbs::widget([
+                  		'links' => isset($this->params['breadcrumbs']) ? $this->params['breadcrumbs'] : [],
+              		]) ?>
+					<?= $content ?>
+        		</div>
+				<!--content结束-->
+			</div>
+		</div>
 
+    </div>
+	<!-- wrap结束 -->
+	
+	<!--footer开始-->
     <footer class="footer">
         <div class="container">
             <p class="pull-left">&copy; JY工作室 2015</p>
@@ -68,6 +85,7 @@ AppAsset::register($this);
             </p>
         </div>
     </footer>
+	<!--footer结束-->
 
     <script src="/assets/db76ed7b/jquery.js"></script>
     <script src="/assets/299024f3/yii.js"></script>

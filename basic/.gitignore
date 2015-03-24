@@ -1,3 +1,6 @@
+# vim file 
+*.sw*
+
 # phpstorm project files
 .idea
 
