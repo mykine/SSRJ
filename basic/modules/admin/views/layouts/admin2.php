@@ -90,61 +90,84 @@ AppAsset::register($this);
     <div class="navbar navbar-duomi navbar-static-top" role="navigation">
         <div class="container-fluid">
             <div class="navbar-header">
-                <a class="navbar-brand" href="/Admin/index.html" id="logo">配置管理系统（流量包月）
+                <a class="navbar-brand" href="default" id="logo">ssrj楼盘管理系统
                 </a>
             </div>
+
+             <div class="collapse navbar-collapse">
+                 <ul class="nav navbar-nav navbar-right">
+                     <li class="active">
+                         <a href="#">
+                             Link
+                             <span class="sr-only">(current)</span>
+                         </a>
+                     </li>
+                     <li>
+                         <a href="#">Link</a>
+                     </li>
+                 </ul>
+             </div>
+
         </div>
     </div>
     <div class="container-fluid">
         <div class="row">
             <div class="col-md-2">
-                <ul id="main-nav" class="nav nav-tabs nav-stacked" style="">
+                <ul id="main-nav" class="nav nav-tabs nav-stacked" >
                     <li class="active">
-                        <a href="#">
-                            <i class="glyphicon glyphicon-th-large"></i>
-                            首页 		
+                        <a href="default">
+                            <!-- <i class="glyphicon glyphicon-th-large"></i> -->
+                            <i class="glyphicon glyphicon-home"></i>
+                            首  页
+                        </a>
+                    </li>
+                   
+                    <li>
+                        <a href="loupan">
+                            <i class="glyphicon glyphicon-credit-card"></i>
+                            楼盘管理
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="house-style">
+                            <i class="glyphicon glyphicon-globe"></i>
+                            户型管理
+							<span class="label label-warning pull-right">5</span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="building">
+                            <i class="glyphicon glyphicon-calendar"></i>
+                            楼栋管理
                         </a>
                     </li>
                     <li>
+                        <a href="house">
+                            <i class="glyphicon glyphicon-fire"></i>
+                            房屋管理
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="tag-position">
+                            <i class="glyphicon glyphicon-fire"></i>
+                            楼栋分布管理
+                        </a>
+                    </li>
+
+                     <li>
                         <a href="#systemSetting" class="nav-header collapsed" data-toggle="collapse">
                             <i class="glyphicon glyphicon-cog"></i>
                             系统管理
                                <span class="pull-right glyphicon glyphicon-chevron-down"></span>
                         </a>
                         <ul id="systemSetting" class="nav nav-list collapse secondmenu" style="height: 0px;">
-                            <li><a href="#"><i class="glyphicon glyphicon-user"></i>用户管理</a></li>
-                            <li><a href="#"><i class="glyphicon glyphicon-th-list"></i>菜单管理</a></li>
-                            <li><a href="#"><i class="glyphicon glyphicon-asterisk"></i>角色管理</a></li>
+                            <li><a href="worker"><i class="glyphicon glyphicon-user"></i>用户管理</a></li>
                             <li><a href="#"><i class="glyphicon glyphicon-edit"></i>修改密码</a></li>
-                            <li><a href="#"><i class="glyphicon glyphicon-eye-open"></i>日志查看</a></li>
+                            <li><a href="#"><i class="glyphicon glyphicon-off"></i>退出系统</a></li>
                         </ul>
-                    </li>
-                    <li>
-                        <a href="./plans.html">
-                            <i class="glyphicon glyphicon-credit-card"></i>
-                            物料管理		
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="./grid.html">
-                            <i class="glyphicon glyphicon-globe"></i>
-                            分发配置
-							<span class="label label-warning pull-right">5</span>
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="./charts.html">
-                            <i class="glyphicon glyphicon-calendar"></i>
-                            图表统计
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <i class="glyphicon glyphicon-fire"></i>
-                            关于系统
-                        </a>
                     </li>
 
                 </ul>
@@ -154,10 +177,16 @@ AppAsset::register($this);
             </div>
         </div>
     </div>
-    <script src="http://cdn.bootcss.com/jquery/2.1.1/jquery.min.js"></script>
-    <script src="http://cdn.bootcss.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
-    <script>
-    </script>
+    <!-- <script src="http://cdn.bootcss.com/jquery/2.1.1/jquery.min.js"></script>
+    <script src="http://cdn.bootcss.com/bootstrap/3.2.0/js/bootstrap.min.js"></script> -->
+    <script src="/assets/db76ed7b/jquery.js"></script>
+    <script src="/assets/299024f3/yii.js"></script>
+    <script src="/assets/299024f3/yii.gridView.js"></script>
+    <script src="/assets/5681ccfb/js/bootstrap.js"></script>
+    <script type="text/javascript">jQuery(document).ready(function () {
+jQuery('#w0').yiiGridView({"filterUrl":"/index.php/admin/loupan/","filterSelector":"#w0-filters input, #w0-filters select"});
+});</script>
+
 </body>
 </html>
 
