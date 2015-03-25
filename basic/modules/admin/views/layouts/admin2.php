@@ -97,13 +97,14 @@ AppAsset::register($this);
              <div class="collapse navbar-collapse">
                  <ul class="nav navbar-nav navbar-right">
                      <li class="active">
-                         <a href="#">
+                         <!-- <a href="#">
                              Link
                              <span class="sr-only">(current)</span>
-                         </a>
+                         </a> -->
+                         <a style="background-color:black;">Admin</a>
                      </li>
                      <li>
-                         <a href="#">Link</a>
+                         <a href="#">注销</a>
                      </li>
                  </ul>
              </div>
@@ -133,7 +134,7 @@ AppAsset::register($this);
                         <a href="house-style">
                             <i class="glyphicon glyphicon-globe"></i>
                             户型管理
-							<span class="label label-warning pull-right">5</span>
+							<!-- <span class="label label-warning pull-right">5</span> -->
                         </a>
                     </li>
 
