@@ -7,7 +7,7 @@ use yii\grid\GridView;
 /* @var $searchModel app\models\Search\Loupan */
 /* @var $dataProvider yii\data\ActiveDataProvider */
 
-$this->title = 'Loupans';
+$this->title = '楼盘列表';
 $this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="loupan-index">

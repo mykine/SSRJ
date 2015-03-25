@@ -90,7 +90,7 @@ AppAsset::register($this);
     <div class="navbar navbar-duomi navbar-static-top" role="navigation">
         <div class="container-fluid">
             <div class="navbar-header">
-                <a class="navbar-brand" href="default" id="logo">ssrj楼盘管理系统
+                <a class="navbar-brand" href="/index.php/admin/default" id="logo">ssrj楼盘管理系统
                 </a>
             </div>
 
@@ -124,14 +124,14 @@ AppAsset::register($this);
                     </li>
                    
                     <li>
-                        <a href="loupan">
+                        <a href="/index.php/admin/loupan">
                             <i class="glyphicon glyphicon-credit-card"></i>
                             楼盘管理
                         </a>
                     </li>
 
                     <li>
-                        <a href="house-style">
+                        <a href="/index.php/admin/house-type">
                             <i class="glyphicon glyphicon-globe"></i>
                             户型管理
 							<!-- <span class="label label-warning pull-right">5</span> -->
@@ -139,20 +139,20 @@ AppAsset::register($this);
                     </li>
 
                     <li>
-                        <a href="building">
+                        <a href="/index.php/admin/building">
                             <i class="glyphicon glyphicon-calendar"></i>
                             楼栋管理
                         </a>
                     </li>
                     <li>
-                        <a href="house">
+                        <a href="/index.php/admin/house">
                             <i class="glyphicon glyphicon-fire"></i>
                             房屋管理
                         </a>
                     </li>
 
                     <li>
-                        <a href="tag-position">
+                        <a href="/index.php/admin/tag-position">
                             <i class="glyphicon glyphicon-fire"></i>
                             楼栋分布管理
                         </a>
@@ -165,7 +165,7 @@ AppAsset::register($this);
                                <span class="pull-right glyphicon glyphicon-chevron-down"></span>
                         </a>
                         <ul id="systemSetting" class="nav nav-list collapse secondmenu" style="height: 0px;">
-                            <li><a href="worker"><i class="glyphicon glyphicon-user"></i>用户管理</a></li>
+                            <li><a href="/index.php/admin/worker"><i class="glyphicon glyphicon-user"></i>用户管理</a></li>
                             <li><a href="#"><i class="glyphicon glyphicon-edit"></i>修改密码</a></li>
                             <li><a href="#"><i class="glyphicon glyphicon-off"></i>退出系统</a></li>
                         </ul>
@@ -174,6 +174,10 @@ AppAsset::register($this);
                 </ul>
             </div>
             <div class="col-md-10">
+              <!--   <?= Breadcrumbs::widget([
+                        'links' => isset($this->params['breadcrumbs']) ? $this->params['breadcrumbs'] : [],
+                    ]) ?> -->
+                    <hr />
                 <?= $content ?>
             </div>
         </div>
