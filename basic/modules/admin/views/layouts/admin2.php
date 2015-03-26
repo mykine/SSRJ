@@ -116,7 +116,7 @@ AppAsset::register($this);
             <div class="col-md-2">
                 <ul id="main-nav" class="nav nav-tabs nav-stacked" >
                     <li class="active">
-                        <a href="default">
+                        <a href="/index.php/admin/default">
                             <!-- <i class="glyphicon glyphicon-th-large"></i> -->
                             <i class="glyphicon glyphicon-home"></i>
                             首  页
@@ -185,6 +185,7 @@ AppAsset::register($this);
     <!-- <script src="http://cdn.bootcss.com/jquery/2.1.1/jquery.min.js"></script>
     <script src="http://cdn.bootcss.com/bootstrap/3.2.0/js/bootstrap.min.js"></script> -->
     <script src="/assets/db76ed7b/jquery.js"></script>
+    <script src="/assets/js/ajaxfileupload.js"></script>
     <script src="/assets/299024f3/yii.js"></script>
     <script src="/assets/299024f3/yii.gridView.js"></script>
     <script src="/assets/5681ccfb/js/bootstrap.js"></script>

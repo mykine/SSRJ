@@ -65,10 +65,29 @@ class LoupanController extends Controller
         if ($model->load(Yii::$app->request->post()) && $model->save()) {
             return $this->redirect(['view', 'id' => $model->id]);
         } else {
-            return $this->render('create', [
+            return $this->render('create2', [
                 'model' => $model,
             ]);
         }
+    }
+
+/**
+     * Creates a new Loupan model.
+     * If creation is successful, the browser will be redirected to the 'view' page.
+     * @return mixed
+     */
+    public function actionCreate2()
+    {
+        // $model = new Loupan();
+
+        // if ($model->load(Yii::$app->request->post()) && $model->save()) {
+        //     return $this->redirect(['view', 'id' => $model->id]);
+        // } else {
+        //     return $this->render('create2', [
+        //         'model' => $model,
+        //     ]);
+        // }
+        print_r($_POST['Loupan']);
     }
 
     /**
