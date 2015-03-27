@@ -5,7 +5,7 @@ use yii\helpers\Html;
 
 /* @var $this yii\web\View */
 /* @var $model app\models\Loupan */
-
+// $this->registerJsFile('assets/js/own/uploadimg.js'); 
 $this->
 title = '创建楼盘';
 ?>
@@ -36,10 +36,12 @@ title = '创建楼盘';
         <div class="form-group field-loupan-pic">
             <label class="control-label" for="loupan-pic">楼盘图片</label>
             <!-- <input type="text" id="loupan-pic" class="form-control" name="Loupan[pic]" maxlength="4000"> -->
-            <input  type="file" />
-            <img src="" style="width:100px;height:100px;" alt="" />
+            <input  type="file" name="loupanImg" id="loupanImg" onchange="uploadimg();" />
+            <img src="/assets/img/loading/load.gif" class='notshow' name="loading" id='loading' />
+            <img src="" name="loupanpic" id='loupanpic' style="width:100px;height:100px;" alt="" />
             <input type="hidden" name="Loupan[pic]" id="loupan-pic" maxlength="4000" />
             <div class="help-block"></div>
+
         </div>
         <div class="form-group field-loupan-volume">
             <label class="control-label" for="loupan-volume">容积率</label>
