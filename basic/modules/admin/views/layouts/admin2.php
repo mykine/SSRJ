@@ -14,7 +14,8 @@ AppAsset::register($this);
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <title></title>
-    <link href="http://cdn.bootcss.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
+    <!-- <link href="http://cdn.bootcss.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet"> -->
+    <link href="/assets/bootstrap/3.3.2/css/bootstrap.min.css" rel="stylesheet">
     <style>
         #main-nav {
             margin-left: 1px;
